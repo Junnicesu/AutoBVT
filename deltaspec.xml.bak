@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DifftoolSpec version="1.0">
+  <class name="CIM_SoftwareElement" default="include" />
+  <class name="CIM_InstalledProduct" default="include" />
+  <class name="CIM_ManagedElement" default="include" /> 
+  <class name="CIM_DeviceSoftware" default="include" /> 
+  <class name="CIM_MessageLog" default="exclude" /> 
+  <class name="CIM_LogRecord" default="exclude" /> 
+  <class name="IBMSG_InstalledApplication" default="exclude" /> 
+  <class name="OMC_IDESMARTAttrib" default="exclude" /> 
+  <class name="IBMSG_IDESMARTAttrib" default="exclude" /> 
+</DifftoolSpec>

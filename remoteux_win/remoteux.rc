@@ -1,0 +1,262 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Windows 2003/2000/NT\0"
+            VALUE "CompanyName", "IBM Corp.\0"
+            VALUE "FileDescription", "Remote UpdateXpress utility\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RemoteUX\0"
+            VALUE "LegalCopyright", "Copyright ?2002 - 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RemoteUX.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Remote UpdateXpress\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RUXSVC
+//
+/*
+#ifndef _DEBUG
+ IDR_RUXSVC              RUXSVC  DISCARDABLE     "..\\release\\ruxsvc.exe"
+#else
+ IDR_RUXSVC              RUXSVC  DISCARDABLE     "..\\debug\\ruxsvc.exe"	..\\..\\..\\..\\..\\..\\win_RELEASE\\bin	D:\\Final\\win_RELEASE\\bin
+#endif
+*/
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+STRINGTABLE {
+
+// Remote UpdateXpress resources
+        RUX_CONNECT_TITLE               "Connecting to the remote machine..."
+        RUX_GET_COMP_ERROR              "Could not determine the computer name\n"
+        RUX_CONNECT_REMOTE              "Connecting to remote service..."
+        RUX_CONNECT_ADMIN_FAIL          "Unable to connect to %%s\\ADMIN$\n"
+        RUX_CONNECT_IPC_FAIL            "Unable to connect to %%s\\IPC$\n"
+        RUX_COPY_SERVICE_FAIL           "Unable to copy service to %%s\\ADMIN$\\System32\n"
+        RUX_COPY_RESOURCE_FAIL          "Unable to copy Resource.DLL to %%s\\ADMIN$\\System32\n"
+        RUX_START_SERVICE_FAIL          "Unable to start remote service\n"
+        RUX_CONNECT_SERVICE_FAIL        "Unable to connect to remote service\n"
+        RUX_COPY_SOURCE                 "Copying required UpdateXpress source to %%s.\n"
+        RUX_PLEASE_WAIT                 "Please wait."
+        RUX_COPY_SOURCE_ERROR           "There was an error copying files to the remote machine.\n"
+        RUX_CANNOT_CONTINUE             "Cannot continue!\n"
+        RUX_RUN_LAUNCHRUX               "Running UpdateXpress on the remote machine...\n"
+        RUX_RUN_LAUNCHRUX_COMPLETE      "Completed running UpdateXpress on the remote machine\n"
+        RUX_RUN_PACKAGE                 "Running Package %%s\n"
+        RUX_RUN_PACKAGE_COMPLETE        "Completed running Package %%s\n"
+        RUX_CLEAN_REMOTE                "Cleaning up RemoteUX files and directories on remote machine %%s\n"
+        RUX_LINE_FEED                   "\n"
+        /* not using RUX_PROGRAM_HELP any more */
+        /*
+        RUX_PROGRAM_INFO_1              "RemoteUX V1.2 for Windows 2003/2000/NT4 - UpdateXpress remote utility can:\n"
+        RUX_PROGRAM_INFO_2              "   (1) Determine the firmware and driver levels of the remote server.\n"
+        RUX_PROGRAM_INFO_3              "   (2) Remotely install xSeries ""Package For The Web"" Updates.\n"
+        RUX_PROGRAM_INFO_4              "   (3) Remotely run UpdateXpress to update backlevel firmware and drivers.\n"
+        */
+        /* not using RUX_PROGRAM_HELP any more */
+        /*
+        RUX_PROGRAM_HELP_1              "Usage: RemoteUX.exe \\\\computer [options] command [-a {args}]\n\n"
+        RUX_PROGRAM_HELP_2              "Options [-r:path -l:path -n -u:user -pwd:{pwd|*}]:\n"
+        RUX_PROGRAM_HELP_3              " -r|-REMOTE:path       Set the remote staging area.\n"
+        RUX_PROGRAM_HELP_4              "                       Format is shareName\\path.  ""C$\\TEMP"" is the default.\n"
+        RUX_PROGRAM_HELP_5              " -l|-LOCAL:path        Set the local source directory.\n"
+        RUX_PROGRAM_HELP_6              "                       The current directory (.\\) is the default.\n"
+        RUX_PROGRAM_HELP_7              " -n|-NOWAIT            Don't wait for remote process to terminate.\n"
+        RUX_PROGRAM_HELP_8              " -u|-USER:user         Set the user name for remote connection.\n"
+        RUX_PROGRAM_HELP_9              " -p|-PWD:{password|*}  Set the password for remote connection.\n"
+        RUX_PROGRAM_HELP_10             "                       ""*"" will cause the user to be prompted for the password.\n\n"
+        RUX_PROGRAM_HELP_11             "Command {[-e]|[-pkg:pkg.exe -a {args}]|[-d]|[-f]|[-g]|[clr]}:\n"
+        RUX_PROGRAM_HELP_12             " -e|-EXAMINE           Determine the firmware and driver levels.\n"
+        RUX_PROGRAM_HELP_13             " -pkg|-PACKAGE:pkg.exe Remotely run ""Package For The Web"" update ""pkg.exe"".\n"
+        RUX_PROGRAM_HELP_14             "      ""pkg.exe"" or drivers if they are not in the current (.\\) directory.\n"
+        RUX_PROGRAM_HELP_15             "      NOTE: Use -l|-LOCAL to specify the local source directory of the update\n"
+        RUX_PROGRAM_HELP_16             " -d|-DRIVERS           Update all backlevel Drivers on remote server.\n"
+        RUX_PROGRAM_HELP_17             " -f|-FIRMWARE          Update all backlevel Firmware on remote server.\n"
+        RUX_PROGRAM_HELP_18             "Command {[-f -s]|[-k:package.exe args]|[-e]}:\n"
+        RUX_PROGRAM_HELP_19             "[-a {args}] \n"
+        RUX_PROGRAM_HELP_20             "  Arguments following the ""-a"" option are passed unmodified to the package's\n"
+        RUX_PROGRAM_HELP_21             "  embedded setup program.\n\n"
+        RUX_PROGRAM_HELP_22             "Examples:\n"
+        RUX_PROGRAM_HELP_23             "RemoteUX.exe \\\\remote -e\n"
+        RUX_PROGRAM_HELP_24             " - Display the model number of the server ""remote"".\n\n"
+        RUX_PROGRAM_HELP_25             "RemoteUX.exe \\\\10.2.3.10 -pkg:PU1345U.exe -a -r\n"
+        RUX_PROGRAM_HELP_26             " - Run update package ""PU1345U.exe"" on server ""10.2.3.10"" and pass the ""-r""\n"
+        RUX_PROGRAM_HELP_27             "   argument to the package which means reboot the server immediately.\n\n"
+        RUX_PROGRAM_HELP_28             "RemoteUX.exe \\\\10.0.0.9 -user:karl -pwd:update -l:d:\\tools -package:34L5421.exe\n"
+        RUX_PROGRAM_HELP_29             " - Run update package ""34L4521.exe"" on server ""10.0.0.9"".\n"
+        RUX_PROGRAM_HELP_30             "   Authenticate as user ""karl"" with password ""update"".\n"
+        RUX_PROGRAM_HELP_31             "   Use the default share and path ""C$\\TEMP"" as the remote staging area.\n"
+        RUX_PROGRAM_HELP_32             "   Copy the update package from the ""d:\\tools"" directory.\n\n"
+        RUX_PROGRAM_HELP_33             "RemoteUX.exe \\\\remote -drivers\n"
+        RUX_PROGRAM_HELP_34             " - Run UpdateXpress on server ""remote"" to update the drivers.\n"
+        RUX_PROGRAM_HELP_35             "   Use the default share and path ""C$\\TEMP"" as the remote staging area.\n\n"
+        RUX_PROGRAM_HELP_36             "RemoteUX.exe \\\\remote -user:fred -pwd:* -r:c$\\UpdateXpress -l:e: -d\n"
+        RUX_PROGRAM_HELP_37             " - Run UpdateXpress on server ""remote"" to update the drivers.\n"
+        RUX_PROGRAM_HELP_38             "   Authenticate as user ""fred"" but prompt the user for the password.\n"
+        RUX_PROGRAM_HELP_39             "   Use the remote share and path ""c$\\UpdateXpress"" as the remote staging area.\n"
+        RUX_PROGRAM_HELP_40             "   Copy UpdateXpress data from the ""E:"" drive instead of the current directory.\n"
+        RUX_PROGRAM_HELP_41             "RemoteUX.exe \\\\remote -firmware -a -r\n"
+        RUX_PROGRAM_HELP_42             " - On server ""remote"", schedule firmware updates and reboot immediately.\n"
+        RUX_PROGRAM_HELP_43             "\n"
+        */
+        RUX_PASSWORD                    "\nPassword: "
+        RUX_ECHO_OFF_ERROR              "\nUnable to turn off echo to hide password.\n"
+        RUX_UNKNOWN                     "Unknown"
+        RUX_INVALID_PASSWORD            "\nInvalid password\n"
+        RUX_CONNECTING                  "Connecting to remote service...\n"
+        RUX_CREATE_DIR_ERROR            "Unable to create directory %%s\n"
+        RUX_TEST                        "Test"
+        RUX_SEND_ERROR                  "Error %%u sending data to service.\n"
+        RUX_CONNECT_PIPE_ERROR          "Error %%u connecting to pipes\n"
+        RUX_LOST_COMM                   "\nLost communication with remote service!\nAttempting to reconnect..."
+        RUX_RECONNECTED                 "\nReconnected to remote service.\n"
+        RUX_RESPONSE_ERROR              "Could not read the response from the service!\n"
+        RUX_COMM_PIPE_CONNECT_ERROR     "Could not reconnect the communication pipes!\n"
+        RUX_RECONNECT_ERROR             "\nCould not reconnect to the remote service!\n"
+        RUX_VIEW_LOG                    "Please review the UpdateXpress log file on the remote machine for\nfurther information after the updates have completed.\n\n"
+        RUX_UNKNOWN_READ_ERROR          "Unknown error %%u reading data from service.\n"
+        RUX_PIPES_NOT_CONNECTED         "Pipes are not connected\n"
+        RUX_REMOTE_COMM_START_FAIL      "\nRemote command failed to start. Returned error code = %%d (0x%%X)\n"
+        RUX_RETURN_CODE                 "\nReturn code = %%d (0x%%X)\n"
+        RUX_ERR_STR                     "err str=[%%s]\n"
+        RUX_REMOTE_MACH_MODEL           "\nRemote Machine=%%s  Model Number=%%s"
+        RUX_REMOTE_MACH_TYPE            "  Server Type=%%s\n"
+        RUX_NOT_SUPPORTED               "Machine type %%s is not currently supported.\n"
+        RUX_STATUS_DOT                  "."
+        RUX_CREATE_DIRECTORY_ERROR      "\nError creating directory %%s. Return code was %%d\n"
+        RUX_SOURCE_DIR_NOT_EXIST        "\n\nSource directory %%s does not exist!\n"
+        RUX_COPY_ERROR                  "Unable to copy %%s to %%s\n"
+        RUX_ERROR_CODE                  "Error code=%%d\n"
+        RUX_REMOTE_REBOOTING            "\nThe remote machine is rebooting to perform the requested update.\n"
+        RUX_COPYING_PACKAGE             "\nCopying package %%s to the remote machine.\nPlease wait.\n"
+        RUX_COMMUNICATE_WITH_REMOTE     "Communicating with the remote system..."
+        RUX_RUNNING_COMMAND             "Running %%s on the remote machine..."
+
+// Remote UpdateXpress debug resources
+        RUX_DEBUG_OUT_PIPE_BROKEN       "StdOutput broken pipe.\n"
+        RUX_DEBUG_OUT_PIPE_ERROR        "StdOutput pipe error - rc is %%d.\n"
+        RUX_DEBUG_OUT_PIPE_QUIT         "Quiting StdOutput thread\n"
+        RUX_DEBUG_ERR_PIPE_BROKEN       "StdError broken pipe\n"
+        RUX_DEBUG_ERR_PIPE_ERROR        "StdError pipe error - rc is %%d.\n"
+        RUX_DEBUG_ERR_PIPE_QUIT         "Quiting StdError thread\n"
+        RUX_DEBUG_IN_PIPE_BROKEN        "StdInput broken pipe\n"
+        RUX_DEBUG_IN_PIPE_ERROR         "StdInput pipe error - rc is %%d\n"
+        RUX_DEBUG_RETURN_CODE           "Return code was %%u\n"
+        RUX_DEBUG_SLEEP                 "Sleeping for 5 seconds\n"
+        RUX_DEBUG_DELETING_DIR          "Deleting directory %%s\n"
+        RUX_DEBUG_DELETE_DIR_ERROR      "Could not remove sub-directory %%s\nReturn code was %%d\n"
+        RUX_DEBUG_DELETE_FILE_ERROR     "Unable to delete file %%s\nReturn code was %%d\n"
+        RUX_DEBUG_WAIT_STDOUT           "In WaitNamedPipe for stdout\n"
+        RUX_DEBUG_WAIT_STDOUT_ERROR     "WaitNamedPipe for stdout error. Return code is %%d\n"
+        RUX_DEBUG_WAIT_STDIN            "In WaitNamedPipe for stdin\n"
+        RUX_DEBUG_WAIT_STDIN_ERROR      "WaitNamedPipe for stdin error. Return code is %%d\n"
+        RUX_DEBUG_WAIT_STDERR           "In WaitNamedPipe for stderr\n"
+        RUX_DEBUG_WAIT_STDERR_ERROR     "WaitNamedPipe for stderr error. Return code is %%d\n"
+        RUX_DEBUG_VALID_HANDLES         "All handles are valid! Breaking\n"
+        RUX_DEBUG_SLEEPING              "ConnectRemotePipes Sleeping\n"
+        RUX_DEBUG_INVALID_HANDLES       "Invalid handles! Closing handles and returning false\n"
+        RUX_DEBUG_LISTENING_PIPES       "Listening remote pipes.  Returning true\n"
+        RUX_DEBUG_READ_RESPONSE         "Attempting to read response from the service\n"
+        RUX_DEBUG_READ_ERROR            "Read error - Return code is %%d\n"
+        RUX_DEBUG_IS_CONNECTED          "Is connected, attempting to read\n"
+        RUX_DEBUG_RUNNING_CMD           "In ExecuteRemoteCommand - cmd is %%d\n"
+        RUX_DEBUG_RETURN_FROM_CMD       "Returning true from running cmd %%d\n"
+}
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DifftoolSpec version="1.0">
+  <class name="IBMSG_DeviceFirmware" default="include" /> 
+  <class name="IBMSG_SysBusDevice" default="include" /> 
+  <class name="IBMSG_LSIControllerBIOSElement" default="exclude" /> 
+<!--  <class name="LSIESG_ControllerFirmwareIdentity" default="include" /> 
+  <class name="LSI_RAID_SystemFWSoftwareIdentity" default="include" /> 
+  <class name="LSIESG_MegaRAIDHBA" default="include" /> 
+  <class name="LSI_RAID_ControllerBIOSSoftwareIdentity" default="include" /> 
+  <class name="IBMSG_DiagnosticVPD" default="include" /> 
+  <class name="IBMSG_SPROMFirmwareVPDMain" default="include" /> 
+  <class name="IBMSG_HardwareRevisionLevel" default="include" /> 
+  <class name="IBMSG_IDESMARTErrorCmdData" default="include" /> 
+  <class name="LSI_RAID_ControllerBIOSSoftwareIdentity" default="include" />
+  <class name="EMXCNA_RawData" default="exclude" />
+  <class name="IBMSG_SystemServiceInfo" default="exclude" />
+  <class name="OMC_ATADevice" default="exclude" />
+  <class name="IBMSG_PCIDevice" default="exclude" /> -->
+</DifftoolSpec>

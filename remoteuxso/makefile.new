@@ -1,0 +1,37 @@
+# Makefile for remoteux
+
+PROGNAME = remoteux.so
+EXENAME= test.exe
+CC = g++
+CXX = g++
+
+OBJ = *.o
+
+#debug
+CCFLAGS = -Xlinker -rpath -Xlinker -lutil -g -shared -DDEBUG 
+#CCFLAGS = -lutil -g -shared -DDEBUG
+#release
+#CCFLAGS = -lutil -g -shared -O3
+
+all:  clean $(PROGNAME) $(EXENAME)
+
+remoteuxso: clean $(PROGNAME) 
+
+$(EXENAME):
+	$(CXX) -g -DDEBUG -lutil -o $@ main.cpp $(PROGNAME)
+
+$(PROGNAME):
+	$(CXX) $(CCFLAGS) $(OBJ) -o $(PROGNAME) 
+
+######### clean	
+clean:
+	rm -f  *.so *~; 
+	rm -f $(PROGNAME) $(EXENAME); 
+
+######### install
+install : 
+	rm -f /usr/lib/$(PROGNAME)
+	ln $(PROGNAME) /usr/lib;
+	ldconfig
+
+

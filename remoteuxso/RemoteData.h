@@ -1,0 +1,27 @@
+#ifndef REMOTEDATA_H_
+#define REMOTEDATA_H_
+
+#include <stdio.h>
+#include "OSArchType.h"
+
+namespace ReCBB{
+
+enum ERUXError{
+    REMOTE_SUCCESS= 0,
+    ERROR_REMOTE_CONNECT= 1,
+    ERROR_REMOTE_INVENTARY= 2,
+    ERROR_REMOTE_EXECUTION= 3,
+    ERROR_REMOTE_FILE_COPY= 4,
+    ERROR_REMOTE_FILE_NOT_EXIST= 5,
+    ERROR_REMOTE_CREATE_TMP_FILE= 6,
+    ERROR_REMOTE_AUTHENTICATE = 7,
+    ERROR_REMOTE_ARGUMENT = 8
+}; 
+
+
+
+}//namespace ReCBB
+
+#endif
+   
+
